@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">twitter2nitter</string>
+
+    <string name="description">Hello! This app only redirects shared urls to nitter.\nShare twitter url to this app and it will redirect.</string>
+    <string name="view_in_app">Redirect to nitter</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_source_code">Source code</string>
+    <string name="source_code_url">https://github.com/AucT/twitter2nitter</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_regex">Can\'t find twitter url from text</string>
+
+    <string name="redirect_url">Type redirect url</string>
+
+
+    <string name="pref_redirect_url_default">https://nitter.it</string>
+    <string name="pref_redirect_url_key">pref_redirect_url_key</string>
+</resources>
