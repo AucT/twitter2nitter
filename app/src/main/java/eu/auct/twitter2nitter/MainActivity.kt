@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        sharedPref  = getPreferences(MODE_PRIVATE)
+        sharedPref = getPreferences(MODE_PRIVATE)
 
         when {
             intent?.action == Intent.ACTION_SEND && "text/plain" == intent.type -> {
@@ -72,15 +72,17 @@ class MainActivity : AppCompatActivity() {
                 builder.setView(input)
                 builder.setTitle(R.string.redirect_url)
 
-                setPositiveButton(R.string.save,
-                    { dialog, id ->
-                        setRedirectUrl(input.text.toString())
+                setPositiveButton(
+                    R.string.save
+                ) { _, _ ->
+                    setRedirectUrl(input.text.toString())
 
-                    })
-                setNegativeButton(R.string.cancel,
-                    { dialog, id ->
-                        dialog.cancel()
-                    })
+                }
+                setNegativeButton(
+                    R.string.cancel
+                ) { dialog, _ ->
+                    dialog.cancel()
+                }
             }
             builder.show()
         }
@@ -89,7 +91,7 @@ class MainActivity : AppCompatActivity() {
     private fun handleSendText(intent: Intent) {
         intent.getStringExtra(Intent.EXTRA_TEXT)?.let {
             val tweet = getTweet(it)
-            if (tweet!=null) {
+            if (tweet != null) {
                 val link = getRedirectUrl() + tweet
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(link)))
             }
