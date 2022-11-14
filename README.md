@@ -1,9 +1,16 @@
 # twitter2nitter - redirect twitter to nitter
 Share twitter url to this app, and you will be redirected.
 
-This is useful for users of [materialistic](https://github.com/hidroh/materialistic) hackernews app.
+Share twitter url to this app, and you will be redirected.
 
-p.s. After creating it for myself, I found untrackme app on f-droid, but my twitter2nitter app supports sharing text that includes twitter url. Which is why it is better than untrackme. Plus, source code is only 100 lines of kotlin.
+Redirect works for:
 
+1. Open twitter url with twitter2nitter
+2. Share twitter url with twitter2nitter
+3. Share text that includes twitter url with twitter2nitter
+
+The third option is useful for users of materialistic hackernews app or any app that shares text like "Android - https://twitter.com/android".
+
+Currently, it is the only app that can redirect such texts. Also, you can share google search result with twitter on mobile.
 # Download
 [Download](https://github.com/AucT/twitter2nitter/releases)
