@@ -1,11 +1,9 @@
 package eu.auct.twitter2nitter
 
 import android.app.AlertDialog
-import android.content.DialogInterface
 import android.content.Intent
 import android.content.SharedPreferences
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.InputType
 import android.view.Menu
@@ -13,6 +11,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
@@ -74,12 +73,12 @@ class MainActivity : AppCompatActivity() {
                 builder.setTitle(R.string.redirect_url)
 
                 setPositiveButton(R.string.save,
-                    DialogInterface.OnClickListener { dialog, id ->
+                    { dialog, id ->
                         setRedirectUrl(input.text.toString())
 
                     })
                 setNegativeButton(R.string.cancel,
-                    DialogInterface.OnClickListener { dialog, id ->
+                    { dialog, id ->
                         dialog.cancel()
                     })
             }
