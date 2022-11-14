@@ -8,4 +8,5 @@ Redirect works for:
 3. Share text that includes twitter url with twitter2nitter
 
 The third option is useful for users of materialistic hackernews app or any app that shares text like "Android - https://twitter.com/android".
+
 Currently, it is the only app that can redirect such texts. Also, you can share google search result with twitter on mobile.
