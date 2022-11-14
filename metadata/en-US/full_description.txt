@@ -3,6 +3,7 @@ twitter2nitter - redirect twitter to nitter
 Share twitter url to this app, and you will be redirected.
 
 Redirect works for:
+
 1. Open twitter url with twitter2nitter
 2. Share twitter url with twitter2nitter
 3. Share text that includes twitter url with twitter2nitter

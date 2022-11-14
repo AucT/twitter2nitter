@@ -3,6 +3,7 @@ twitter2nitter - перенаправляє twitter на nitter
 Поділіться URL-адресою Twitter із цією програмою, і ви будете перенаправлені.
 
 Перенаправлення працює у випадках:
+
 1. Відкрийте URL-адресу Twitter за допомогою twitter2nitter
 2. Поділіться URL-адресою Twitter із twitter2nitter
 3. Поділіться текстом, який містить URL-адресу Twitter, з twitter2nitter
