@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">twitter2nitter</string>
 
-    <string name="description">Hello! This app only redirects shared urls to nitter.\nShare twitter url to this app and it will redirect.</string>
+    <string name="description">Hello! This app only redirects shared urls to nitter.\nShare twitter url to this app and it will redirect.\n#StandWithUkraine</string>
     <string name="view_in_app">Redirect to nitter</string>
 
     <string name="action_settings">Settings</string>
