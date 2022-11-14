@@ -88,8 +88,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun handleSendText(intent: Intent) {
         intent.getStringExtra(Intent.EXTRA_TEXT)?.let {
-            val link = getRedirectUrl() + getTweet(it)
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(link)))
+            val tweet = getTweet(it)
+            if (tweet!=null) {
+                val link = getRedirectUrl() + tweet
+                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(link)))
+            }
             finish()
         }
     }
