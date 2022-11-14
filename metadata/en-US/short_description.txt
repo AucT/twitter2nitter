@@ -1,0 +1,1 @@
+Redirect twitter to nitter by sharing url/text
