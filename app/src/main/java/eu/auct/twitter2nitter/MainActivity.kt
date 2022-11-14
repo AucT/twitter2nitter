@@ -118,7 +118,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getTweet(input: String): String? {
-        val pattern: Pattern = Pattern.compile(".*?twitter\\.com(/.*?)(\\s|\$)")
+        val pattern: Pattern = Pattern.compile(".*?twitter\\.com(/.*?)(\\s|\$|&)")
         val matcher: Matcher = pattern.matcher(input)
         matcher.find()
 
