@@ -15,6 +15,6 @@
     <string name="redirect_url">Type redirect url</string>
 
 
-    <string name="pref_redirect_url_default">https://nitter.it</string>
+    <string name="pref_redirect_url_default">https://nitter.ca</string>
     <string name="pref_redirect_url_key">pref_redirect_url_key</string>
 </resources>
