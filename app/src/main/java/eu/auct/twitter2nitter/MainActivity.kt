@@ -95,8 +95,8 @@ class MainActivity : AppCompatActivity() {
                 val link = getRedirectUrl() + tweet
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(link)))
             }
-            finish()
         }
+        finish()
     }
 
     private fun handleUrl(intent: Intent) {
@@ -105,8 +105,8 @@ class MainActivity : AppCompatActivity() {
         if (data != null) {
             val link = getRedirectUrl() + data.path
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(link)))
-            finish()
         }
+        finish()
     }
 
     private fun setRedirectUrl(url: String) {
