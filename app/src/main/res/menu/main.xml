@@ -13,4 +13,9 @@
         android:id="@+id/action_source_code"
         android:title="@string/action_source_code"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_nitter_instances"
+        android:title="@string/action_nitter_instances"
+        app:showAsAction="never" />
 </menu>

@@ -57,6 +57,17 @@ class MainActivity : AppCompatActivity() {
                 )
                 true
             }
+            R.id.action_nitter_instances -> {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse(getString(R.string.nitter_instances_url))
+                    )
+                )
+                true
+            }
+
+
             else -> super.onOptionsItemSelected(item)
         }
     }
