@@ -14,4 +14,9 @@ Currently, it is the only app that can redirect such texts. Also, you can share 
 Zero permissions is used.
 
 # Download
-[Download](https://github.com/AucT/twitter2nitter/releases)
+
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+     alt="Get it on F-Droid"
+     height="80">](https://f-droid.org/packages/eu.auct.twitter2nitter/)
+
+Or get the APK from the [Releases Section](https://github.com/AucT/twitter2nitter/releases).
