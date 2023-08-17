@@ -19,10 +19,14 @@ class ExampleUnitTest {
 
 
     private fun getTweet(input: String): String? {
-        val pattern: Pattern = Pattern.compile(".*?(twitter|x)\\.com(/.*?)(\\s|\$|&)")
+        val pattern: Pattern = Pattern.compile(".*?(twitter|[/.]x)\\.com(/.*?)(\\s|\$|&)")
         val matcher: Matcher = pattern.matcher(input)
         matcher.find()
-        return matcher.group(2)
+        try {
+            return matcher.group(2)
+        } catch (t: Throwable) {
+            return null
+        }
     }
     @Test
 
@@ -40,6 +44,10 @@ class ExampleUnitTest {
         assertEquals( "/AucT", getTweet("http://x.com/AucT"))
         assertEquals( "/AucT", getTweet("http://www.x.com/AucT"))
 
+        assertEquals( null, getTweet("http://mywebx.com/AucT"))
+        assertEquals( null, getTweet("https://mywebx.com/AucT"))
+        assertEquals( null, getTweet("http://www.mywebx.com/AucT"))
+        assertEquals( null, getTweet("https://www.mywebx.com/AucT"))
     }
 
 }
