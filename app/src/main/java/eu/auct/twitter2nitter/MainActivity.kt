@@ -133,12 +133,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getTweet(input: String): String? {
-        val pattern: Pattern = Pattern.compile(".*?twitter\\.com(/.*?)(\\s|\$|&)")
+        val pattern: Pattern = Pattern.compile(".*?(twitter|x)\\.com(/.*?)(\\s|\$|&)")
         val matcher: Matcher = pattern.matcher(input)
         matcher.find()
 
         try {
-            return matcher.group(1)
+            return matcher.group(2)
         } catch (t: Throwable) {
             Toast.makeText(
                 this,
