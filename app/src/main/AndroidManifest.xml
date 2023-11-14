@@ -32,6 +32,9 @@
                 <data android:host="twitter.com" />
                 <data android:host="mobile.twitter.com" />
                 <data android:host="x.com" />
+                <data android:host="vxtwitter.com" />
+                <data android:host="fxtwitter.com" />
+                <data android:host="fixupx.com" />
             </intent-filter>
 
             <intent-filter>
