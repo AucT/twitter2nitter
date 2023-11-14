@@ -11,8 +11,8 @@ android {
         applicationId "eu.auct.twitter2nitter"
         minSdk 21
         targetSdk 34
-        versionCode 9
-        versionName "1.8"
+        versionCode 10
+        versionName "1.9"
         resourceConfigurations += ["en"]
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
